@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import InstallPrompt from './InstallPrompt';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p>
+          With install popup.
         </p>
         <a
           className="App-link"
@@ -19,8 +23,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <InstallPrompt />
     </div>
   );
 }
 
 export default App;
+
